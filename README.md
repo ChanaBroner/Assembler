@@ -69,33 +69,30 @@
 
 - `assembler.c` - Main program.
 
-- `first_function.c` - An implementation of first pass algorithm.
+- `macro.c` - macro's layout.
 
-- `first_analyze.c` - Auxiliary methods for encoding the rows in memory
+- `first_function.c`
 
-- `second_function.c` - An implementation of second pass algorithm.
+- `second_function.c`
 
-- `macro.c` - Returns a file after macro's layout.
+- `table_function.c`
 
 
 **Data Structures:**
 
-- `structs.h` - Contains the structures needed for the program.
+- `include_define_struct.h`
 
-- `external_linked_list_struct.c` - Used to represent Extern Symbol Table of the assembler.
+- `macro.h`
 
-- `label_linked_list_struct.c` - Used to represent  internal Symbol Table of the assembler.
+- `first_function.h`
 
+- `second_function.h`
 
-**Helpers and utils:**
+- `table_function.h`
 
-- `reserved_word.c` - main program helpers to check arguments validity.
+- `word_checking_functions.h`
 
-- `utils.c` - General program helpers.
-
-- `declerations_of_constants.h` - statement of operations.
-
-- `declerations_of_functions.h` - Statement of constants.
+- `functions_document.h`
 
 
 ## Computer and Language Structure
@@ -175,12 +172,6 @@ Command Sentence may or may not start with a label. Valid commands are:
 When the assembler receives input in assembly language, it has to go over the input 2 times. The reason for that is the references to instructions which still has unknown addresses during first pass.
 
 The assembler has 2 linked lists representing the Image Code and Image Data and another linked list representing the Symbol Table.
-
-**Symbol Table** - will be updated during first pass with the addresses of the instructions.
-
-**Image Code** - represents machine code of all the command sentences.
-
-**Image Data** - represents machine code of all the instruction sentences.
 
 Using an instruction counter, each instruction is being added to the counter, ensuring the next instruction will be assigned to free memory space.
 
