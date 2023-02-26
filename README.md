@@ -67,17 +67,15 @@
 ## File Structure
 **Assembler Files:**
 
-- `main.c` - Main program.
+- `assembler.c` - Main program.
 
-- `first_pass.c` - An implementation of first pass algorithm.
+- `first_function.c` - An implementation of first pass algorithm.
 
 - `first_analyze.c` - Auxiliary methods for encoding the rows in memory
 
-- `second_pass.c` - An implementation of second pass algorithm.
+- `second_function.c` - An implementation of second pass algorithm.
 
-- `errors.c` - A thorough check of errors during first and second pass.
-
-- `macro_layuot.c` - Returns a file after macro's layout.
+- `macro.c` - Returns a file after macro's layout.
 
 
 **Data Structures:**
