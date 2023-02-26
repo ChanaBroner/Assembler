@@ -21,9 +21,7 @@
 - `file.ent` - The entry labels from the source file
 - `file.ext` - The extern labels from the source file
 
-
-![תמונה הרצה פרויקט](https://user-images.githubusercontent.com/125824958/221407253-d6f66b27-9771-4985-85fe-4e086031ee28.png)
-
+![Uploading פרויקט.png…]()
 
 
 ## File Structure
