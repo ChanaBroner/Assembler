@@ -1,0 +1,12 @@
+int add_data_to_list(char *word, int sortWord, int *dc, dataRow **dataHead, dataRow **currData, dataRow **lastData);
+void add_code_to_list(int numOper, int *ic, char word[MAX_WORD_LENGTH], int numLine, codeRow **codeHead, codeRow **currCode, codeRow **lastCode);
+void add_symbol_to_list(int isOper, int isExtrn, int ic, char word[MAX_WORD_LENGTH],symbolRow **currSmbl,symbolRow **smblHead, symbolRow **lastSmbl);
+void add_error_to_list(char *errorMsg, int numLine, error **errorHead, error **currError, error **lastError);
+void free_lists(dataRow **dataHead, dataRow **lastData, codeRow **codeHead, codeRow **lastCode, entryNode **entryHead, entryNode **entryLast, symbolRow **smblHead, symbolRow **lastSmbl, macro **macroHead, macro **lastMacro, error **errorHead, error **lastError);
+int create_exter_symbol(int numLine, error **errorHead, error **currError, error **lastError,symbolRow **currSmbl,symbolRow **smblHead, symbolRow **lastSmbl);
+int create_entry_node(int numLine, error **errorHead, error **currError, error **lastError,symbolRow **smblHead,entryNode **entryHead,entryNode **entryCurr,entryNode **entryLast);
+void write_entries(char *fileName, error **errorHead, error **currError, error **lastError,symbolRow **smblHead,entryNode **entryHead);
+void printErrors(error **errorHead);
+void add_macro_to_list(char *name, char *content, macro **macroHead, macro **currMacro, macro **lastMacro); 
+int read_word(char word[MAX_WORD_LENGTH]);
+int check_word(char word[MAX_WORD_LENGTH], int *numInEnum, int isOperLine, char **errMsg, int numLine, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);

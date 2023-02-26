@@ -1,0 +1,13 @@
+int get_oper_rules(int numInEnum, int canGet[2]);
+void enter_string_into_char_array(char word[], int *dc, dataRow **dataHead, dataRow **currData, dataRow **lastData);
+int oper_checking(int numInEnum, int *ic, int *isCorrect, int numLine, codeRow **currCode, codeRow **lastCode, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);
+int data_checking(int numInEnum, int *dc, int *isCorrect, int numLine, dataRow **dataHead, dataRow **currData, dataRow **lastData, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);
+int get_dircet_rules(int numInEnum, int *canGet);
+int enter_data_into_row(int canGet, int *dc, int maxNumVarGet, int numLine, int *isCorrect, dataRow **dataHead, dataRow **currData, dataRow **lastData, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);
+void enter_ARE_bits(codeRow *tempCode, int AREtoEnter);
+void enter_int_into_bits_array(char array[FIELD_SIZE+1], int toEnter, int numberBits, int startInd);
+int read_word(char word[MAX_WORD_LENGTH]);
+int check_word(char word[MAX_WORD_LENGTH], int *numInEnum, int isOperLine, char **errMsg, int numLine, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);
+int add_data_to_list(char *word, int sortWord, int *dc, dataRow **dataHead, dataRow **currData, dataRow **lastData);
+void add_error_to_list(char *errorMsg, int numLine, error **errorHead, error **currError, error **lastError);
+char *enter_fields_into_row(char arguments[MAX_OPER_GET][MAX_WORD_LENGTH], int *ic, int canGet[2], int numLine, codeRow **currCode, codeRow **lastCode, error **errorHead, error **currError, error **lastError,symbolRow **smblHead);
