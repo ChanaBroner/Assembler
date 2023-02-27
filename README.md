@@ -22,7 +22,6 @@
 - `file.ext` - The extern labels from the source file
 
 ![פרויקט1](https://user-images.githubusercontent.com/125824958/221509999-5cb29149-dcfd-4b05-bbf4-e5ed5c3531bd.png)
-
 ## File Structure
 **Assembler Files:**
 
