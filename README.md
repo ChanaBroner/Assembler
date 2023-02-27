@@ -21,7 +21,7 @@
 - `file.ent` - The entry labels from the source file
 - `file.ext` - The extern labels from the source file
 
-![פרויקט](https://user-images.githubusercontent.com/125824958/221407668-1b6b2347-9f59-4ded-b4d9-a5c3b1b0343b.png)
+![פרויקט1](https://user-images.githubusercontent.com/125824958/221509697-030d282c-8106-4806-8b20-4684607ec404.png))
 
 
 ## File Structure
